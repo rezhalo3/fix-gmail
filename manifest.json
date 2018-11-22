@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Fix Gmail",
+  "version": "0.1"
+  "content_scripts": [
+  {
+    "matches": [
+      "https://mail.google.com/*",
+      "http://mail.google.com/*"
+    ],
+    "js": [
+    	"jquery-3.3.1-link.min.js",
+    	"modify_icons.js"
+    ]
+  }
+]
+}
